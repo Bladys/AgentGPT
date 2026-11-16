@@ -60,7 +60,7 @@ func _fx(effect: String, cell: Vector2i, pair_id: int) -> void:
 	if vfx == null or board == null:
 		return
 	var color: Color = ENERGY_COLORS.get(board.model.pair_by_id[pair_id]["energy"], Color.WHITE)
-	vfx.play(effect, board.cell_center(cell) + board.position - vfx.position, color)
+	vfx.play(effect, board.cell_center(cell) + board.global_position - vfx.global_position, color)
 
 
 func _start_power(e: Dictionary) -> void:
@@ -101,7 +101,7 @@ func _on_anim_event(event_name: String, tk: int) -> void:
 	elif event_name == "celebrate_peak" and tk == _celebrate_token:
 		_celebrate_token = -1
 		if vfx and board:
-			vfx.play("hatch", board.position + board.size / 2.0 - vfx.position, Color("f3d27a"))
+			vfx.play("hatch", board.global_position + board.size / 2.0 - vfx.global_position, Color("f3d27a"))
 		AudioService.play_sfx("sfx_hatch")
 
 
@@ -112,7 +112,7 @@ func _release(info: Dictionary, with_fx: bool) -> void:
 		release_count += 1
 		AudioService.play_sfx("sfx_" + info["effect"])
 		if vfx and board:
-			vfx.play(info["effect"], board.cell_center(info["target"]) + board.position - vfx.position, Color("f3e6c0"))
+			vfx.play(info["effect"], board.cell_center(info["target"]) + board.global_position - vfx.global_position, Color("f3e6c0"))
 
 
 func cancel_all() -> void:

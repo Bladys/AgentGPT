@@ -659,7 +659,8 @@ func test_gesture_and_screens() -> void:
 		Settings.set_value("language", lang)
 		for screen in ["home", "map", "collection", "shop", "settings", "restoration"]:
 			main.go(screen, {}, true)
-			await get_tree().process_frame
+			for fr in 4:
+				await get_tree().process_frame
 			check(main.current_name == screen, "écran %s (%s)" % [screen, lang])
 			check(_min_button_ok(main), "boutons >= 48 unités sur %s" % screen)
 	Settings.set_value("language", "auto")

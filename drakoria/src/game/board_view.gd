@@ -100,7 +100,7 @@ func flash_forbidden(cell: Vector2i) -> void:
 # ---------------------------------------------------------------- dessin
 
 func _draw() -> void:
-	if model == null:
+	if model == null or cell_size() < 12.0:
 		return
 	var cs := cell_size()
 	var o := _origin()

@@ -28,7 +28,8 @@ func product(id: String) -> Dictionary:
 func localized_price(id: String) -> String:
 	## En production : prix localisé fourni par le magasin. Ici : hypothèse de test.
 	var p := product(id)
-	return "%.2f €" % float(p.get("test_price_eur", 0.0))
+	var s := "%.2f" % float(p.get("test_price_eur", 0.0))
+	return s.replace(".", ",") + " €" if I18n.lang == "fr" else "€" + s
 
 
 func owns(id: String) -> bool:
