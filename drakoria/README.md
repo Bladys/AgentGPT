@@ -108,16 +108,21 @@ magasin, remboursements et production) et le budget d'essai.
 
 ## Export Android de test
 
-**Non produit ici** : l'environnement de build bloque `dl.google.com`
-(SDK Android). Sur un poste équipé :
+Un APK de débogage a été produit avec Godot 4.7.2 (arm64-v8a + armeabi-v7a,
+signature de débogage v2/v3 vérifiée par `apksigner`). Il n'a **jamais été
+lancé sur un appareil ni un émulateur**. Il n'est pas versionné (`build/`).
 
-1. Godot 4.7.2 + modèles d'export 4.7.2 (*Éditeur → Gérer les modèles d'export*).
-2. JDK 17 et SDK Android (platform-tools, build-tools) ; chemins dans
-   *Paramètres de l'éditeur → Export → Android* ; keystore de débogage.
-3. `godot --headless --path . --export-debug "Android (test)" build/drakoria-test.apk`
+Reproduire :
 
-Le préréglage `export_presets.cfg` est fourni mais **n'a pas été exécuté**.
-L'identifiant de paquet est un placeholder.
+1. Godot 4.7.2 + modèles d'export 4.7.2 (`android_debug.apk`, `android_release.apk`).
+2. Un JDK, et un dossier SDK contenant `platform-tools/adb` et
+   `build-tools/<version>/{apksigner,zipalign}` (les paquets Ubuntu `adb`,
+   `apksigner`, `zipalign` suffisent pour l'export sans Gradle).
+3. Keystore de débogage ; chemins dans *Paramètres de l'éditeur → Export → Android*.
+4. `godot --headless --path . --export-debug "Android (test)" build/drakoria-test.apk`
+
+L'identifiant de paquet `com.example.drakoria.prototype` est un placeholder.
+L'icône est celle par défaut de Godot. Aucune version « release » ni AAB.
 
 ## Limites restantes
 

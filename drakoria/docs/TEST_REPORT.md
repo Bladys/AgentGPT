@@ -37,7 +37,7 @@ français et anglais, taille de texte normale et très grande.
 - Aucune écoute : les sons sont des tonalités de maquette, il n'y a pas de musique.
 - Aucun test humain des niveaux : durée de 1 à 3 minutes, intérêt et
   progression ressentie restent des hypothèses.
-- Export Android non exécuté (SDK inaccessible depuis l'environnement de build).
+- L'APK de débogage a été exporté et sa signature vérifiée, mais il n'a été installé ni lancé sur aucun appareil ou émulateur.
 - Pack d'animation v3 absent : le contrat est testé avec le substitut dessiné,
   pas avec les 24 clips livrés.
 - Les tests d'arrière-plan simulent la suspension ; les notifications système
