@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "note": "Prix = hypothèses de test. En production, le prix localisé vient du magasin ; ne jamais afficher ces montants comme définitifs.",
+  "products": [
+    {"id": "remove_interstitials", "kind": "non_consumable", "test_price_eur": 3.99, "name_key": "shop.p.noads.name", "desc_key": "shop.p.noads.desc"},
+    {"id": "habitat_decor_lanterns", "kind": "non_consumable", "test_price_eur": 1.99, "name_key": "shop.p.decor.name", "desc_key": "shop.p.decor.desc"},
+    {"id": "dragon_skin_brindille_bloom", "kind": "non_consumable", "test_price_eur": 2.99, "name_key": "shop.p.skin.name", "desc_key": "shop.p.skin.desc"}
+  ]
+}

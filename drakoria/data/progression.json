@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "status": "provisional — la fiche de progression du dossier de production fait autorité et remplacera ces valeurs",
+  "levels_per_island": 50,
+  "districts_per_island": 5,
+  "playable_levels": 50,
+  "tutorial_levels": 5,
+  "seeds_per_first_clear": 1,
+  "milestone_every": 10,
+  "islands": [
+    {"id": "island_1", "name_key": "island.1", "playable": true},
+    {"id": "island_2", "name_key": "island.2", "playable": false},
+    {"id": "island_3", "name_key": "island.3", "playable": false},
+    {"id": "island_4", "name_key": "island.4", "playable": false},
+    {"id": "island_5", "name_key": "island.5", "playable": false},
+    {"id": "island_6", "name_key": "island.6", "playable": false}
+  ],
+  "milestones": ["garden", "bridge", "habitat", "fountain", "sanctuary"],
+  "companions": {
+    "brindille": {"unlock_after_level": 10, "energy": "water", "paid": false},
+    "braise": {"unlock_after_level": 20, "energy": "heat", "paid": false},
+    "nacre": {"unlock_after_level": 30, "energy": "light", "paid": false}
+  },
+  "hints": {"starting": 3, "daily": 1, "rewarded_ad": 1},
+  "garden": {"steps_per_island": 50, "bonus_plots": 10}
+}

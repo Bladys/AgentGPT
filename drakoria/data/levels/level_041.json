@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "schema": "drakoria.level/1",
+  "id": "level_041",
+  "index": 41,
+  "island": 1,
+  "district": 5,
+  "role": "learning",
+  "origin": "handmade",
+  "human_playtested": false,
+  "width": 7,
+  "height": 7,
+  "pairs": [
+    {
+      "id": 1,
+      "number": 1,
+      "energy": "water",
+      "pattern": "solid",
+      "source": [
+        0,
+        0
+      ],
+      "dest": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "energy": "heat",
+      "pattern": "dots",
+      "source": [
+        1,
+        1
+      ],
+      "dest": [
+        5,
+        3
+      ]
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "energy": "light",
+      "pattern": "dashes",
+      "source": [
+        0,
+        3
+      ],
+      "dest": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "energy": "water",
+      "pattern": "chevrons",
+      "source": [
+        0,
+        5
+      ],
+      "dest": [
+        0,
+        6
+      ]
+    }
+  ],
+  "obstacles": [
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      4
+    ]
+  ],
+  "terrain": [
+    {
+      "pos": [
+        4,
+        2
+      ],
+      "type": "gap"
+    },
+    {
+      "pos": [
+        3,
+        4
+      ],
+      "type": "ice"
+    }
+  ],
+  "activators": [
+    {
+      "id": "act_1",
+      "companion": "brindille",
+      "pair": 1,
+      "altar": [
+        6,
+        0
+      ],
+      "target": [
+        4,
+        2
+      ],
+      "from": "gap",
+      "to": "bridge"
+    },
+    {
+      "id": "act_2",
+      "companion": "braise",
+      "pair": 2,
+      "altar": [
+        5,
+        3
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "from": "ice",
+      "to": "melted"
+    }
+  ],
+  "objectives": [
+    "connect_all"
+  ],
+  "required_companion": "braise",
+  "presentation": {
+    "background": "bg_island_1",
+    "tint": "tint_district_5",
+    "props": [
+      "prop_set_1"
+    ],
+    "music": "music_island_1",
+    "ambience": "amb_island_1"
+  },
+  "reference_solution": {
+    "order": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "paths": {
+      "1": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "2": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "3": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "4": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ]
+    }
+  },
+  "solver": {
+    "solver_version": 1,
+    "solvable": true,
+    "nodes": 31,
+    "taut_solutions": 2,
+    "taut_solutions_capped": false,
+    "unique_taut_solution": false,
+    "activators_required": {
+      "act_1": true,
+      "act_2": true
+    },
+    "greedy_success_ratio": 1.0,
+    "fill_ratio": 0.649,
+    "measured_difficulty": "easy"
+  }
+}

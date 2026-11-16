@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "status": "provisional mirror of the v3 animation contract — replaced by ANIMATION_MANIFEST.json from the art/animation pack when present at res://ANIMATION_MANIFEST.json",
+  "frame": {"width": 256, "height": 256, "columns": 8},
+  "pivot": {"character": [128, 226], "vfx": [128, 128]},
+  "crossfade_ms": 180,
+  "companions": ["brindille", "braise", "nacre"],
+  "states": {
+    "idle": {"loop": true},
+    "blink": {"loop": false, "fallback_duration": 0.4},
+    "react": {"loop": false, "fallback_duration": 0.7},
+    "cast": {"loop": false, "fallback_duration": 1.2, "events": [{"name": "power_release", "time": 0.54}]},
+    "celebrate": {"loop": false, "fallback_duration": 1.3, "events": [{"name": "celebrate_peak", "time": 0.49}]},
+    "sleep": {"loop": true, "habitat_only": true}
+  },
+  "vfx": ["connect", "bridge", "melt", "freeze", "hatch", "restore"]
+}

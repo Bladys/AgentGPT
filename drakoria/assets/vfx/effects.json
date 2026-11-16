@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "status": "provisional catalogue — to be reconciled with VFX_AUDIO.md from the art pack",
+  "global_particle_cap": 160,
+  "max_big_effects": 2,
+  "pool_size": 6,
+  "effects": {
+    "channel_start": {"trigger": "draft_started", "duration": 0.35, "particles": 10, "anchor": "cell", "sfx": "sfx_channel_start", "big": false, "reduced": "none"},
+    "trail": {"trigger": "segment_added", "duration": 0.3, "particles": 4, "anchor": "cell", "sfx": "sfx_trace_step", "big": false, "reduced": "none"},
+    "connect": {"trigger": "pair_connected", "duration": 0.6, "particles": 24, "anchor": "cell", "sfx": "sfx_connect", "big": true, "atlas": "vfx_connect", "reduced": "static_check"},
+    "soft_error": {"trigger": "segment_refused", "duration": 0.25, "particles": 0, "anchor": "cell", "sfx": "sfx_soft_error", "big": false, "reduced": "static_cross"},
+    "bridge": {"trigger": "power_release:brindille", "duration": 0.9, "particles": 28, "anchor": "cell", "sfx": "sfx_bridge", "big": true, "atlas": "vfx_bridge", "reduced": "instant_state"},
+    "melt": {"trigger": "power_release:braise", "duration": 0.9, "particles": 28, "anchor": "cell", "sfx": "sfx_melt", "big": true, "atlas": "vfx_melt", "reduced": "instant_state"},
+    "freeze": {"trigger": "power_release:nacre", "duration": 0.9, "particles": 28, "anchor": "cell", "sfx": "sfx_freeze", "big": true, "atlas": "vfx_freeze", "reduced": "instant_state"},
+    "hatch": {"trigger": "level_completed", "duration": 1.0, "particles": 32, "anchor": "eggs", "sfx": "sfx_hatch", "big": true, "atlas": "vfx_hatch", "reduced": "instant_state"},
+    "restore": {"trigger": "garden_restored", "duration": 1.0, "particles": 32, "anchor": "screen_edge", "sfx": "sfx_restore", "big": true, "atlas": "vfx_restore", "reduced": "instant_state"},
+    "seed_gain": {"trigger": "seed_granted", "duration": 0.5, "particles": 12, "anchor": "counter", "sfx": "sfx_seed", "big": false, "reduced": "none"}
+  }
+}

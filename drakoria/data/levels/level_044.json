@@ -1,0 +1,329 @@
+{
+  "version": 1,
+  "schema": "drakoria.level/1",
+  "id": "level_044",
+  "index": 44,
+  "island": 1,
+  "district": 5,
+  "role": "variation",
+  "origin": "generated_candidate",
+  "human_playtested": false,
+  "width": 7,
+  "height": 7,
+  "pairs": [
+    {
+      "id": 1,
+      "number": 1,
+      "energy": "light",
+      "pattern": "solid",
+      "source": [
+        2,
+        6
+      ],
+      "dest": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "energy": "light",
+      "pattern": "dots",
+      "source": [
+        6,
+        5
+      ],
+      "dest": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "energy": "heat",
+      "pattern": "dashes",
+      "source": [
+        3,
+        2
+      ],
+      "dest": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "energy": "water",
+      "pattern": "chevrons",
+      "source": [
+        4,
+        0
+      ],
+      "dest": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "energy": "heat",
+      "pattern": "rings",
+      "source": [
+        4,
+        4
+      ],
+      "dest": [
+        2,
+        4
+      ]
+    }
+  ],
+  "obstacles": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      6
+    ]
+  ],
+  "terrain": [
+    {
+      "pos": [
+        3,
+        4
+      ],
+      "type": "current"
+    }
+  ],
+  "activators": [
+    {
+      "id": "act_1",
+      "companion": "nacre",
+      "pair": 2,
+      "altar": [
+        1,
+        5
+      ],
+      "target": [
+        3,
+        4
+      ],
+      "from": "current",
+      "to": "frozen"
+    }
+  ],
+  "objectives": [
+    "connect_all"
+  ],
+  "required_companion": "nacre",
+  "presentation": {
+    "background": "bg_island_1",
+    "tint": "tint_district_5",
+    "props": [
+      "prop_set_4"
+    ],
+    "music": "music_island_1",
+    "ambience": "amb_island_1"
+  },
+  "reference_solution": {
+    "order": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "paths": {
+      "1": [
+        [
+          2,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "2": [
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "3": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "4": [
+        [
+          4,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "5": [
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    }
+  },
+  "solver": {
+    "solver_version": 1,
+    "solvable": true,
+    "nodes": 33,
+    "taut_solutions": 2,
+    "taut_solutions_capped": false,
+    "unique_taut_solution": false,
+    "activators_required": {
+      "act_1": true
+    },
+    "greedy_success_ratio": 0.5,
+    "fill_ratio": 0.806,
+    "measured_difficulty": "medium"
+  }
+}

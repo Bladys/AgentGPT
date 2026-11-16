@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "schema": "drakoria.level/1",
+  "id": "level_011",
+  "index": 11,
+  "island": 1,
+  "district": 2,
+  "role": "learning",
+  "origin": "handmade",
+  "human_playtested": false,
+  "width": 5,
+  "height": 5,
+  "pairs": [
+    {
+      "id": 1,
+      "number": 1,
+      "energy": "water",
+      "pattern": "solid",
+      "source": [
+        0,
+        0
+      ],
+      "dest": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "energy": "heat",
+      "pattern": "dots",
+      "source": [
+        1,
+        1
+      ],
+      "dest": [
+        2,
+        4
+      ]
+    }
+  ],
+  "obstacles": [
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "terrain": [
+    {
+      "pos": [
+        2,
+        2
+      ],
+      "type": "gap"
+    }
+  ],
+  "activators": [
+    {
+      "id": "act_1",
+      "companion": "brindille",
+      "pair": 1,
+      "altar": [
+        4,
+        0
+      ],
+      "target": [
+        2,
+        2
+      ],
+      "from": "gap",
+      "to": "bridge"
+    }
+  ],
+  "objectives": [
+    "connect_all"
+  ],
+  "required_companion": "brindille",
+  "presentation": {
+    "background": "bg_island_1",
+    "tint": "tint_district_2",
+    "props": [
+      "prop_set_3"
+    ],
+    "music": "music_island_1",
+    "ambience": "amb_island_1"
+  },
+  "reference_solution": {
+    "order": [
+      1,
+      2
+    ],
+    "paths": {
+      "1": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "2": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    }
+  },
+  "solver": {
+    "solver_version": 1,
+    "solvable": true,
+    "nodes": 8,
+    "taut_solutions": 1,
+    "taut_solutions_capped": false,
+    "unique_taut_solution": true,
+    "activators_required": {
+      "act_1": true
+    },
+    "greedy_success_ratio": 1.0,
+    "fill_ratio": 0.476,
+    "measured_difficulty": "easy"
+  }
+}

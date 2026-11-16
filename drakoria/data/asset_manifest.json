@@ -1,0 +1,318 @@
+{
+ "version": 1,
+ "note": "IDs stables. status=pending_pack : fichier attendu du pack art/animation, repli procédural en jeu tant qu'il est absent. status=present : le fichier doit exister (vérifié par les tests).",
+ "tints": {
+  "tint_district_1": "#ffffff",
+  "tint_district_2": "#fff4e0",
+  "tint_district_3": "#eaf6ff",
+  "tint_district_4": "#f3ecff",
+  "tint_district_5": "#ffeef0"
+ },
+ "assets": {
+  "anim_brindille_idle": {
+   "path": "res://assets/animations/brindille/idle.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_brindille_blink": {
+   "path": "res://assets/animations/brindille/blink.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_brindille_react": {
+   "path": "res://assets/animations/brindille/react.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_brindille_cast": {
+   "path": "res://assets/animations/brindille/cast.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_brindille_celebrate": {
+   "path": "res://assets/animations/brindille/celebrate.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_brindille_sleep": {
+   "path": "res://assets/animations/brindille/sleep.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_braise_idle": {
+   "path": "res://assets/animations/braise/idle.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_braise_blink": {
+   "path": "res://assets/animations/braise/blink.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_braise_react": {
+   "path": "res://assets/animations/braise/react.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_braise_cast": {
+   "path": "res://assets/animations/braise/cast.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_braise_celebrate": {
+   "path": "res://assets/animations/braise/celebrate.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_braise_sleep": {
+   "path": "res://assets/animations/braise/sleep.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_nacre_idle": {
+   "path": "res://assets/animations/nacre/idle.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_nacre_blink": {
+   "path": "res://assets/animations/nacre/blink.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_nacre_react": {
+   "path": "res://assets/animations/nacre/react.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_nacre_cast": {
+   "path": "res://assets/animations/nacre/cast.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_nacre_celebrate": {
+   "path": "res://assets/animations/nacre/celebrate.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "anim_nacre_sleep": {
+   "path": "res://assets/animations/nacre/sleep.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "vfx_connect": {
+   "path": "res://assets/animations/vfx/connect.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "vfx_bridge": {
+   "path": "res://assets/animations/vfx/bridge.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "vfx_melt": {
+   "path": "res://assets/animations/vfx/melt.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "vfx_freeze": {
+   "path": "res://assets/animations/vfx/freeze.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "vfx_hatch": {
+   "path": "res://assets/animations/vfx/hatch.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "vfx_restore": {
+   "path": "res://assets/animations/vfx/restore.tres",
+   "kind": "spriteframes",
+   "status": "pending_pack"
+  },
+  "bg_island_1": {
+   "path": "res://assets/backgrounds/island_1.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "music_island_1": {
+   "path": "res://assets/audio/music/island_1.ogg",
+   "kind": "music",
+   "status": "pending_pack"
+  },
+  "amb_island_1": {
+   "path": "res://assets/audio/ambience/island_1.ogg",
+   "kind": "ambience",
+   "status": "pending_pack"
+  },
+  "bg_island_2": {
+   "path": "res://assets/backgrounds/island_2.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "music_island_2": {
+   "path": "res://assets/audio/music/island_2.ogg",
+   "kind": "music",
+   "status": "pending_pack"
+  },
+  "amb_island_2": {
+   "path": "res://assets/audio/ambience/island_2.ogg",
+   "kind": "ambience",
+   "status": "pending_pack"
+  },
+  "bg_island_3": {
+   "path": "res://assets/backgrounds/island_3.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "music_island_3": {
+   "path": "res://assets/audio/music/island_3.ogg",
+   "kind": "music",
+   "status": "pending_pack"
+  },
+  "amb_island_3": {
+   "path": "res://assets/audio/ambience/island_3.ogg",
+   "kind": "ambience",
+   "status": "pending_pack"
+  },
+  "bg_island_4": {
+   "path": "res://assets/backgrounds/island_4.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "music_island_4": {
+   "path": "res://assets/audio/music/island_4.ogg",
+   "kind": "music",
+   "status": "pending_pack"
+  },
+  "amb_island_4": {
+   "path": "res://assets/audio/ambience/island_4.ogg",
+   "kind": "ambience",
+   "status": "pending_pack"
+  },
+  "bg_island_5": {
+   "path": "res://assets/backgrounds/island_5.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "music_island_5": {
+   "path": "res://assets/audio/music/island_5.ogg",
+   "kind": "music",
+   "status": "pending_pack"
+  },
+  "amb_island_5": {
+   "path": "res://assets/audio/ambience/island_5.ogg",
+   "kind": "ambience",
+   "status": "pending_pack"
+  },
+  "bg_island_6": {
+   "path": "res://assets/backgrounds/island_6.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "music_island_6": {
+   "path": "res://assets/audio/music/island_6.ogg",
+   "kind": "music",
+   "status": "pending_pack"
+  },
+  "amb_island_6": {
+   "path": "res://assets/audio/ambience/island_6.ogg",
+   "kind": "ambience",
+   "status": "pending_pack"
+  },
+  "music_menu": {
+   "path": "res://assets/audio/music/menu.ogg",
+   "kind": "music",
+   "status": "pending_pack"
+  },
+  "sfx_channel_start": {
+   "path": "res://assets/audio/sfx/channel_start.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_trace_step": {
+   "path": "res://assets/audio/sfx/trace_step.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_connect": {
+   "path": "res://assets/audio/sfx/connect.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_soft_error": {
+   "path": "res://assets/audio/sfx/soft_error.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_bridge": {
+   "path": "res://assets/audio/sfx/bridge.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_melt": {
+   "path": "res://assets/audio/sfx/melt.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_freeze": {
+   "path": "res://assets/audio/sfx/freeze.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_hatch": {
+   "path": "res://assets/audio/sfx/hatch.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_restore": {
+   "path": "res://assets/audio/sfx/restore.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_seed": {
+   "path": "res://assets/audio/sfx/seed.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "sfx_win": {
+   "path": "res://assets/audio/sfx/win.wav",
+   "kind": "sfx",
+   "status": "pending_pack"
+  },
+  "ui_tap": {
+   "path": "res://assets/audio/ui/tap.wav",
+   "kind": "ui",
+   "status": "pending_pack"
+  },
+  "ui_back": {
+   "path": "res://assets/audio/ui/back.wav",
+   "kind": "ui",
+   "status": "pending_pack"
+  },
+  "ui_toggle": {
+   "path": "res://assets/audio/ui/toggle.wav",
+   "kind": "ui",
+   "status": "pending_pack"
+  },
+  "prop_set_1": {
+   "path": "res://assets/props/set_1.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "prop_set_2": {
+   "path": "res://assets/props/set_2.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "prop_set_3": {
+   "path": "res://assets/props/set_3.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  },
+  "prop_set_4": {
+   "path": "res://assets/props/set_4.png",
+   "kind": "texture",
+   "status": "pending_pack"
+  }
+ }
+}

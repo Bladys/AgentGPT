@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "schema": "drakoria.level/1",
+  "id": "level_024",
+  "index": 24,
+  "island": 1,
+  "district": 3,
+  "role": "variation",
+  "origin": "generated_candidate",
+  "human_playtested": false,
+  "width": 6,
+  "height": 6,
+  "pairs": [
+    {
+      "id": 1,
+      "number": 1,
+      "energy": "water",
+      "pattern": "solid",
+      "source": [
+        4,
+        2
+      ],
+      "dest": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "energy": "water",
+      "pattern": "dots",
+      "source": [
+        0,
+        1
+      ],
+      "dest": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "energy": "heat",
+      "pattern": "dashes",
+      "source": [
+        4,
+        0
+      ],
+      "dest": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "energy": "water",
+      "pattern": "chevrons",
+      "source": [
+        5,
+        2
+      ],
+      "dest": [
+        5,
+        0
+      ]
+    }
+  ],
+  "obstacles": [
+    [
+      4,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "terrain": [
+    {
+      "pos": [
+        3,
+        0
+      ],
+      "type": "gap"
+    }
+  ],
+  "activators": [
+    {
+      "id": "act_1",
+      "companion": "brindille",
+      "pair": 4,
+      "altar": [
+        5,
+        0
+      ],
+      "target": [
+        3,
+        0
+      ],
+      "from": "gap",
+      "to": "bridge"
+    }
+  ],
+  "objectives": [
+    "connect_all"
+  ],
+  "required_companion": "brindille",
+  "presentation": {
+    "background": "bg_island_1",
+    "tint": "tint_district_3",
+    "props": [
+      "prop_set_4"
+    ],
+    "music": "music_island_1",
+    "ambience": "amb_island_1"
+  },
+  "reference_solution": {
+    "order": [
+      1,
+      2,
+      4,
+      3
+    ],
+    "paths": {
+      "1": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "2": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "4": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "3": [
+        [
+          4,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    }
+  },
+  "solver": {
+    "solver_version": 1,
+    "solvable": true,
+    "nodes": 64,
+    "taut_solutions": 4,
+    "taut_solutions_capped": false,
+    "unique_taut_solution": false,
+    "activators_required": {
+      "act_1": true
+    },
+    "greedy_success_ratio": 0.5,
+    "fill_ratio": 0.793,
+    "measured_difficulty": "medium"
+  }
+}
